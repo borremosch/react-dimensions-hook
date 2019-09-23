@@ -1,0 +1,30 @@
+{
+  "name": "react-dimensions-hook",
+  "version": "1.0.0",
+  "description": "Measure React elements live using hooks ",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubonacci/react-dimensions-hook.git"
+  },
+  "author": "Cubonacci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cubonacci/react-dimensions-hook/issues"
+  },
+  "homepage": "https://github.com/cubonacci/react-dimensions-hook#readme",
+  "dependencies": {
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
