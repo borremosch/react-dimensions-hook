@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState, useCallback } from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 
-interface Dimensions {
+export interface Dimensions {
   x: number;
   y: number;
   left: number;
