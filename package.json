@@ -1,6 +1,6 @@
 {
   "name": "react-dimensions-hook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Measure React elements live using hooks ",
   "main": "dist/index.js",
   "scripts": {
