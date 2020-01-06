@@ -14,7 +14,7 @@ export interface Dimensions {
 
 // Export hook
 export function useDimensions(
-  dependencies: any[]
+  dependencies: any[] = []
 ): { ref: (node: HTMLElement | null) => void; dimensions: Dimensions } {
   const [node, setNode] = useState<null | HTMLElement>(null);
   const ref = useCallback((newNode: HTMLElement | null) => {
