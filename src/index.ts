@@ -13,7 +13,9 @@ export interface Dimensions {
 }
 
 // Export hook
-export function useDimensions(): { ref: (node: HTMLElement | null) => void; dimensions: Dimensions } {
+export function useDimensions(
+  dependencies: any[]
+): { ref: (node: HTMLElement | null) => void; dimensions: Dimensions } {
   const [node, setNode] = useState<null | HTMLElement>(null);
   const ref = useCallback((newNode: HTMLElement | null) => {
     setNode(newNode);
@@ -65,7 +67,7 @@ export function useDimensions(): { ref: (node: HTMLElement | null) => void; dime
     return () => {
       resizeObserver.disconnect();
     };
-  }, [node, measure]);
+  }, [node, measure, ...dependencies]);
 
   return {
     ref,
